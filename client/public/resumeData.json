@@ -1,0 +1,145 @@
+{
+  "main": {
+    "name":"Dona",
+    "description":"Global Collaboration,  Global Donation ",
+    "image":"profilepic.jpg",
+    "bio":"I am passionate about Tech. I personally believe a world with better technology,is a world with less problems. Am currently into Freelance Software Development and Tech Entrepreneurship. I do FullStack development in React,Angular,Nodejs,Expressjs,MongoDB (MERN/MEAN) when it comes to building dynamic websites. Am also into Wordpress in building some websites. I also have experience in mobile programming using React Native for Cross Platform and Kotlin/Java for Android Dev only. I know Javascript,Kotlin,Python,Php,Java and can script in any database both SQL and NOSQL based. ",
+    "contactmessage":"You can get in touch with me through the contacts below!",
+    "email": "piuskevinm@gmail.com",
+    "phone": "+256702107449",
+    "github":"https://github.com/piuskevin3",
+    "project":"https://github.com/piuskevin3", 
+    "address":{
+      "street":"Kisubi",
+      "city":"Kampala",
+      "state":"Entebbe",
+      "zip": "P.O. Box 10"
+    },
+    "website": "https://piuskevin3.github.io/portfolio/",
+    "resumedownload":"https://piuskevin3.github.io/portfolio/",
+    "social":[
+      {
+        "name":"facebook",
+        "url":"https://facebook/piuskevinmafabi",
+        "className":"fa fa-facebook"
+      },
+      {
+        "name":"twitter",
+        "url":"https://twitter.com/piuskevin3",
+        "className":"fa fa-twitter"
+      },
+      {
+        "name":"linkedin",
+        "url":"https://www.linkedin.com/piuskevin3/",
+        "className":"fa fa-linkedin"
+      },
+      {
+        "name":"instagram",
+        "url":"https://instagram.com/piuskevinmafabi",
+        "className":"fa fa-instagram"
+      },
+      {
+        "name":"github",
+        "url":"https://github.com/piuskevin3",
+        "className":"fa fa-github"
+      }
+    ]
+  },
+  "resume":{
+    "skillmessage":" ",
+    "education":[
+      
+      {
+        "school":"International University of East Africa",
+        "degree":"Bachelor's Degree in Software Engineering",
+        "graduated":"",
+        "description":""
+      }
+    ],
+    "work":[
+      {
+        "company":"Free lancing",
+        "title":"Full Stack Developer ",
+        "years":"4 years",
+        "description":"Have worked on various projects ranging from websites to mobile applications. Have built a university based examination verfication system yet to be released, have worked on partner projects of an Ecommerce website,have coded some mobile apps yet to be released. I majorly focus on the latest technology frameworks,languages and techniques to accomplish world top-class software systems."
+      }
+    
+    ],
+    "skills":[
+      {
+        "name":"Python",
+        "level":"75%"
+      },
+      {
+        "name":"Javascript",
+        "level":"95%"
+      },
+      {
+        "name":"ReactJs and Native",
+        "level":"90%"
+      },
+     
+      {
+        "name":"MongoDB",
+        "level":"82%"
+      },
+      {
+        "name":"MySQL",
+        "level":"70%"
+      },
+      {
+        "name":"WordPress",
+        "level":"90%"
+      },
+      {
+        "name":"Graphics Design",
+        "level":"70%"
+      },
+      {
+        "name":"PHP",
+        "level":"70%"
+      },
+      {
+        "name":"Kotlin",
+        "level":"60%"
+      },
+      {
+        "name":"Nodejs",
+        "level":"90%"
+      },
+      {
+        "name":"JAVA",
+        "level":"80%"
+      }
+    ]
+  },
+  "portfolio":{
+    "projects": [
+      {
+        "title":"LFA",
+        "category":"Ecommerce site yet to be released",
+        "image":"lfa screenshot.png",
+        "url":"https://lfad.sgedu.site/store/"
+      },
+      {
+        "title":"My Portfolio site",
+        "category":"Portfolio",
+        "image":"my portfolio screenshot.png",
+        "url":"https://piuskevin3.github.io/portfolio/"
+      },
+      {
+        "title":"Verification System",
+        "category":"University Verification System yet to be released",
+        "image":"esystem screenshot.jpg",
+        "url":""
+      },
+      {
+        "title":"Mobile Apps",
+        "category":"Currently 3 are under development",
+        "image":"mobile-application-development2.jpg",
+        "url":""
+      }
+     
+    ]
+  }
+}

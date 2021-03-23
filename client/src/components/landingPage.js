@@ -1,73 +1,53 @@
-import React from 'react';
-import { makeStyles } from '@material-ui/core/styles';
-import Grid from '@material-ui/core/Grid';
-import FormLabel from '@material-ui/core/FormLabel';
-import FormControlLabel from '@material-ui/core/FormControlLabel';
-import RadioGroup from '@material-ui/core/RadioGroup';
-import Radio from '@material-ui/core/Radio';
-import Paper from '@material-ui/core/Paper';
+import React, { Component } from 'react';
+import $ from 'jquery';
+import Header from './Header';
+import Footer from './Footer';
+// import About from './Components/About';
+// import Resume from './Components/Resume';
+// import Contact from './Components/Contact';
+// import Portfolio from './Components/Portfolio';
 
-const useStyles = makeStyles((theme) => ({
-    root: {
-        flexGrow: 1,
-    },
-    paper: {
-        height: 240,
-        width: 200,
-    },
-    paperTwo: {
-        height: 240,
-        width: 500,
-    },
-    control: {
-        padding: theme.spacing(2),
-    },
-}));
+class App extends Component {
 
-export default function LandingPage() {
-    const [spacing, setSpacing] = React.useState(2);
-    const classes = useStyles();
+    constructor(props) {
+        super(props);
+        this.state = {
+            foo: 'bar',
+            resumeData: {}
+        };
 
-    const handleChange = (event) => {
-        setSpacing(Number(event.target.value));
-    };
 
-    return (
-        <Grid container className={classes.root} spacing={2}>
-            <Grid item xs={12}>
-                <Grid container justify="center" spacing={spacing}>
-                    {[0, 1].map((value) => (
-                        <Grid key={value} item>
-                            <Paper className={classes.paper} />
-                        </Grid>
-                    ))}
-                </Grid>
-            </Grid>
-            {/* <Grid item xs={12}>
-                <Paper className={classes.control}>
-                    <Grid container>
-                        <Grid item>
-                            <FormLabel>spacing</FormLabel>
-                            <RadioGroup
-                                name="spacing"
-                                aria-label="spacing"
-                                value={spacing.toString()}
-                                onChange={handleChange}
-                                row
-                            >
-                                {[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map((value) => (
-                                    <FormControlLabel
-                                        key={value}
-                                        value={value.toString()}
-                                        control={<Radio />}
-                                        label={value.toString()}
-                                    />
-                                ))}
-                            </RadioGroup>
-                        </Grid>
-                    </Grid>
-                </Paper>
-            </Grid> */}
-        </Grid>
-    );
+
+    }
+
+    getResumeData() {
+        $.ajax({
+            url: './resumeData.json',
+            dataType: 'json',
+            cache: false,
+            success: function (data) {
+                this.setState({ resumeData: data });
+            }.bind(this),
+            error: function (xhr, status, err) {
+                console.log(err);
+                alert(err);
+            }
+        });
+    }
+
+    componentDidMount() {
+        this.getResumeData();
+    }
+
+    render() {
+        return (
+            <div className="App">
+                <Header data={this.state.resumeData.main} />
+
+                <Footer data={this.state.resumeData.main} />
+            </div>
+        );
+    }
 }
+
+export default App;
