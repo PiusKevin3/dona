@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Login</title>
+
+	<script src="https://www.gstatic.com/firebasejs/8.3.0/firebase-app.js" defer></script>
+	<script src="https://www.gstatic.com/firebasejs/8.3.0/firebase-auth.js" defer></script>
+	<script src="https://cdn.jsdelivr.net/npm/js-cookie@rc/dist/js.cookie.min.js" defer></script>
+
+</head>
+
+<body>
+	<h1>login</h1>
+
+	<!-- <form id='loginForm'>
+		<input type="email" name="email" id="email" placeholder="email">
+		<input type="password" name="password" id="password" placeholder="password">
+		<button type="submit">login</button>
+	</form>
+	<br /> -->
+	<button id='loginWithGoogle'>Login With Google</button>
+
+	<script>
+
+		document.addEventListener('DOMContentLoaded', () => {
+			
+			// firebase config
+
+			// var firebaseConfig = {
+
+			// }
+
+			// Initialize Firebase
+			firebase.initializeApp(firebaseConfig);
+
+			const button = document.getElementById('loginWithGoogle')
+			button.addEventListener('click', (e) => {
+				e.preventDefault()
+
+				firebase.auth().setPersistence(firebase.auth.Auth.Persistence.NONE)
+
+				const provider = new firebase.auth.GoogleAuthProvider()
+
+				firebase.auth().signInWithPopup(provider)
+					.then(({ user }) => {
+						// console.log('userid', user.uid)
+						return user.getIdToken().then((idToken) => {
+							return fetch('/auth/login', {
+								method: 'POST',
+								headers: {
+									Accept: '/application/json',
+									"Content-Type": "application/json",
+									"Csrf-Token": Cookies.get('XSRF-TOKEN'),
+									"idToken": idToken
+								},
+								body: JSON.stringify({
+									uid: user.uid
+								})
+							})
+						})
+					})
+					.then(() => {
+						return firebase.auth().signOut()
+					})
+					.then(() => {
+						window.location.assign('/profile')
+					})
+				return false
+			})
+		})
+	</script>
+</body>
+
+</html>

@@ -1,41 +1,56 @@
-var createError = require('http-errors');
-var express = require('express');
-var path = require('path');
-var cookieParser = require('cookie-parser');
-var logger = require('morgan');
+const express = require('express')
+const cors = require('cors')
+const path = require('path')
+const logger = require('morgan')
+const admin = require('firebase-admin')
+const csrf = require('csurf')
+const cookieParser = require('cookie-parser')
+const serviceAccount = require('./serviceAccount.json')
 
-var indexRouter = require('./routes/index');
-var usersRouter = require('./routes/users');
+admin.initializeApp({
+  credential: admin.credential.cert(serviceAccount),
+  databaseURL: process.env.databaseURL
+})
 
-var app = express();
+const { unknownEndpoint, errorHandler, checkAuth } = require('./util/middleware')
 
-// view engine setup
-app.set('views', path.join(__dirname, 'views'));
-app.set('view engine', 'hbs');
+const app = express()
+app.use(logger('dev'))
+app.set('views', path.join(__dirname, 'views'))
+app.set('view engine', 'ejs')
 
-app.use(logger('dev'));
-app.use(express.json());
-app.use(express.urlencoded({ extended: false }));
-app.use(cookieParser());
-app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.json())
+app.use(express.urlencoded({ extended: false }))
+app.use(cors())
+app.use(cookieParser())
 
-app.use('/', indexRouter);
-app.use('/users', usersRouter);
+app.use(csrf({ cookie: true }))
 
-// catch 404 and forward to error handler
-app.use(function(req, res, next) {
-  next(createError(404));
-});
+app.all('*', (req, res, next) => {
+  res.cookie('XSRF-TOKEN', req.csrfToken())
+  next()
+})
 
-// error handler
-app.use(function(err, req, res, next) {
-  // set locals, only providing error in development
-  res.locals.message = err.message;
-  res.locals.error = req.app.get('env') === 'development' ? err : {};
+app.get('/', (req, res) => {
+  res.render('index')
+})
 
-  // render the error page
-  res.status(err.status || 500);
-  res.render('error');
-});
+app.get('/login', (req, res) => {
+  res.render('login')
+})
 
-module.exports = app;
+app.get('/signup', (req, res) => {
+  res.render('signup')
+})
+
+app.get('/profile', checkAuth, (req, res) => {
+  res.render('profile')
+})
+
+app.use('/auth', require('./routes/auth'))
+app.use('/data', require('./routes/data'))
+
+app.use(unknownEndpoint)
+app.use(errorHandler)
+
+module.exports = app
