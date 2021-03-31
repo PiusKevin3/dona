@@ -1,0 +1,351 @@
+.navhaldua {
+  margin-top: 0px;
+  background-color: white !important;
+  color: black !important;
+  box-shadow: none !important;
+  border-bottom: #d9d8d8 1px solid;
+}
+#logoheaderku {
+  height: 40px;
+  margin: 10px 10px;
+  /* width: 119px; */
+}
+.imgs-menu--search {
+  width: 18px;
+  height: 18px;
+  background-position: 0 -323px;
+  margin-bottom: -3px;
+  /* background-color: #fafafa !important; */
+}
+
+.imgs-menu {
+  display: inline-block;
+  background-image: url("../images/icon.png");
+}
+
+.search-ku {
+  background-color: #fafafa !important;
+  width: 500px !important;
+  border: none !important;
+}
+
+.panjang {
+  margin-left: 100px;
+  background-color: #fafafa !important;
+  border-radius: 10px;
+  padding-left: 20px;
+}
+.avatar-dropdown,
+.bahasa-dropdown {
+  background-color: white !important;
+}
+.avatar-dropdown img {
+  border-radius: 100%;
+  padding-right: 5px;
+}
+.avatar-dropdown span {
+  color: black;
+  text-decoration: none;
+}
+.imgs-menu--idea {
+  /* background-image: url("../images/icon.png"); */
+  background-position: 0 -146px;
+  width: 18px;
+  height: 18px;
+}
+.imgs-menu--shop {
+  width: 18px;
+  height: 18px;
+  background-position: 0 -396px;
+}
+.imgs-menu--saved {
+  background-position: 0 -341px;
+  width: 18px;
+  height: 18px;
+}
+.imgs-menu--document {
+  background-position: 0 -64px;
+  width: 18px;
+  height: 18px;
+}
+.imgs-menu--message {
+  background-position: 0 -243px;
+  width: 18px;
+  height: 18px;
+}
+.imgs-menu--notif {
+  background-position: 0 -261px;
+  width: 18px;
+  height: 18px;
+}
+.imgs-menu--baloon {
+  background-position: 0 -0px;
+  width: 18px;
+  height: 18px;
+}
+.imgs-menu--setting {
+  background-position: 0 -378px;
+  width: 18px;
+  height: 18px;
+}
+.imgs-menu--logout {
+  background-position: 0 -225px;
+  width: 18px;
+  height: 18px;
+}
+.dd {
+  margin-right: 5px;
+  margin-bottom: -3px;
+}
+.separator {
+  border-right: 1px #d9d8d8 solid;
+}
+.menu-atas {
+  margin-left: 0px !important;
+  padding: 0px !important;
+}
+#wrn-dropdown {
+  background-color: white !important;
+}
+.flag-dd {
+  width: 18px;
+  height: 18px;
+  border-radius: 100%;
+  margin-left: -10px;
+}
+.bahasaplis {
+  margin-left: -74px;
+  padding: 0px;
+}
+
+/* navbar kedua */
+#badge-new {
+  line-height: 5px;
+  border-radius: 8px;
+  background: #fe5d51;
+  color: #fff;
+  padding: 5px;
+  height: 13px;
+  font-size: 10px;
+  margin-left: 4px;
+  margin-right: 5px;
+  display: -webkit-inline-box;
+  display: inline-flex;
+}
+
+.navbarhaldua-kedua {
+  text-decoration: none;
+  color: #555;
+}
+
+.navbarhaldua-kedua:hover {
+  color: #cd938d;
+}
+/* DD FILTER */
+.dd-filter {
+  margin-top: 2px;
+  background-color: white !important;
+  border-bottom: #d9d8d8 1px solid;
+  font-size: 15px;
+  margin-left: 10px;
+  left: -1px;
+  top: -1px;
+  color: #555;
+  line-height: 17px;
+  padding: 12px 36px 12px 12px;
+  box-sizing: border-box;
+
+  /* font-weight: 200; */
+}
+.buton-dd-filter {
+  border-radius: 5px !important;
+  box-shadow: none !important;
+  border: #d9d8d8 1px solid !important;
+  background-color: #fff !important;
+  color: #555555 !important;
+  font-size: 13px !important;
+  height: 30px;
+  width: 200px;
+  padding: 0px 10px !important;
+  text-align: left !important;
+}
+
+.cari-vendor {
+  background-color: #555 !important;
+  padding: 0 20px;
+  border-radius: 5px;
+  color: white;
+  border: none !important;
+  height: 30px;
+  margin-left: 10px;
+}
+
+/* breadcrumbs */
+.breadkrum {
+  margin-right: 0px !important;
+  border-bottom: #d9d8d8 1px solid;
+  /* margin-left: 100px !; */
+}
+.isi-breadkrum {
+  margin-left: 190px;
+  font-size: 15px;
+  margin-top: 5px;
+  margin-bottom: 5px !important;
+}
+.home-bk {
+  color: #cd938d;
+}
+.togel-bk-parent {
+  background-color: white !important;
+  margin-left: 750px;
+}
+.togel-bk {
+  color: #555555 !important;
+  box-shadow: none !important;
+}
+/* filter dan judul */
+.sebelum-filter {
+  margin-right: 0px !important;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  color: #555555 !important;
+  font-size: 16px;
+}
+.sebelum-filter span {
+  font-weight: bold;
+}
+.switch-bp-vendor {
+  border: #d9d8d8 1px solid;
+  border-radius: 5px;
+  padding: 10px 15px;
+  font-size: 15px;
+  margin-left: 200px;
+}
+.react-switch {
+  margin-left: 10px;
+  margin-bottom: -5px;
+  padding-left: 10px;
+}
+/* CARD */
+.row-card {
+  margin-top: 40px;
+  margin-left: 0px;
+}
+.cardku {
+  width: 238px;
+  height: 388px;
+  box-shadow: none !important;
+  border: #d9d8d8 1px solid !important;
+}
+.img-cardku {
+  border-radius: 50%;
+  width: 160px;
+  height: 160px;
+  margin-left: 39px;
+  margin-top: 20px;
+}
+.card-titleku {
+  font-size: 15px;
+  color: #eba1a1;
+  line-height: 20px;
+  margin-bottom: 10px;
+  display: block;
+  padding-left: 5px;
+  padding-right: 5px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  letter-spacing: 0.2px;
+  text-align: center;
+}
+.category-vendor {
+  color: #555;
+  margin-bottom: 5px;
+  letter-spacing: 0.2px;
+  line-height: 15px;
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  padding: 0 20px;
+  font-weight: 600;
+  font-size: 12px;
+}
+.fa-star {
+  color: #ffc300;
+  margin-left: 3px;
+}
+.ratingku {
+  font-size: 12px;
+}
+.total-reviews {
+  margin-left: 3px;
+}
+.dollar {
+  margin-right: 3px;
+}
+.fa-hal-vendor {
+  color: #9cc6ce;
+  margin-left: 7px;
+  margin-right: 3px;
+}
+.bspay-vendor {
+  font-size: 10px;
+}
+.button-vendorku {
+  font-size: 11px;
+  background-color: #4f9aa8 !important;
+  color: white;
+  border: none;
+  margin-left: -30px;
+  margin-right: 10px;
+  border-radius: 3px;
+  margin-bottom: 20px;
+}
+/* badge di card */
+.bspay-badge {
+  height: 22px;
+  position: absolute;
+  left: -7px;
+  top: 7px;
+  background: #fff;
+  border: 1px solid #d9d8d8;
+  border-top-right-radius: 100px;
+  border-bottom-right-radius: 100px;
+  border-top-left-radius: 40px;
+  color: #6099a7;
+  line-height: 20px;
+  font-size: 14px;
+  font-weight: 500;
+  text-align: left;
+  padding: 0 2px 1px 2px;
+  letter-spacing: 0.2px;
+}
+.badge-bsp-logo {
+  display: inline-block;
+  width: 75px;
+  height: 14px;
+  background: url(https://london.bridestory.com/image/upload/assets/logo-bspay-SkgYuhIRf.png)
+    no-repeat center;
+  background-size: cover;
+  margin-bottom: -3px;
+  margin-left: 3px;
+}
+.flexi-badge {
+  width: 59px;
+  height: auto;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+/* isloading */
+/* .loadingkuu {
+  background-color: hotpink;
+  background: url("https://www.bridestory.com/images/loadersmall.gif");
+} */
+#foto-profile {
+  width: 25px;
+  height: 25px;
+  padding: 0px;
+  margin-right: 4px;
+}

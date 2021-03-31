@@ -1,0 +1,54 @@
+.footer {
+  /* background-color: #18414c !important; */
+  background-color: #002f59 !important;
+}
+.title {
+  font-size: 20px;
+  font-weight: bold;
+  margin-left: 40px;
+  margin-bottom: 20px;
+}
+.list-unstyled {
+  font-size: 15px;
+}
+.flag {
+  width: 25px;
+  height: 25px;
+}
+.dropdown {
+  background-color: #002f59 !important;
+  box-shadow: none !important;
+}
+#warna-dropdown {
+  background-color: #002f59 !important;
+  box-shadow: none !important;
+}
+#language {
+  font-weight: bold;
+}
+.footer-bawah {
+  margin-left: 20px;
+}
+
+.footer-bawah,
+.footer-privacy {
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.tokped {
+  margin-top: -20px;
+  margin-left: 40px;
+  font-size: 20px;
+}
+
+.chat {
+  font-size: 20px;
+  margin-top: -40px;
+  margin-bottom: 50px;
+  /* margin-right: 20px; */
+}
+
+.fa-comment {
+  margin-right: 10px;
+}

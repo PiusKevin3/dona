@@ -55,9 +55,13 @@ time, mark, audio, video {
    outline: 0;
    font-size: 100%;
    vertical-align: baseline;
-   background: transparent;
+   background: rgba(30, 143, 255, 0.644);
 }
 
+/* article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+   display: block;
+} */
 article,aside,details,figcaption,figure,
 footer,header,hgroup,menu,nav,section {
    display: block;

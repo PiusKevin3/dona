@@ -1,0 +1,249 @@
+.bodi {
+  /* background-image: url("https://alexandra.bridestory.com/image/upload/f_auto,dpr_auto,q_80,fl_progressive/assets/bg-landing2x-SkNfGMwsX.jpg"); */
+  background-size: cover;
+  background-color: #d6d6d6 !important;
+  /* background-color: #9b9b9b !important; */
+}
+.jumbotronjumbs {
+  background-color: black;
+  background-image: url("../images/jumbotron.png");
+  background-size: cover;
+  min-height: 710px !important;
+  position: relative;
+  animation: jumbo_anim 60s linear;
+}
+@keyframes jumbo_anim {
+  0% {
+    background-position: 0 0;
+  }
+  25% {
+    background-position: 0 -200px;
+  }
+  50% {
+    background-position: 0 -200px;
+  }
+  75% {
+    background-position: 0 -200px;
+  }
+  100% {
+    background-position: 0 -200px;
+  }
+}
+
+.jumbotronjumbs .containerjumbs {
+  z-index: 1;
+  position: relative;
+}
+
+.jumbotronjumbs::after {
+  content: "";
+  display: block;
+  width: 100%;
+  min-height: 100% !important;
+  background-color: rgba(85, 85, 85, 0.5);
+  position: absolute;
+  bottom: 0px;
+}
+
+.h3 {
+  margin-left: -100px;
+  margin-top: 100px;
+  color: white;
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.MyTypist {
+  margin-left: -100px;
+  color: white;
+  font-size: 30px;
+  margin-top: 30px;
+  font-weight: bold;
+}
+
+.bawah-typist {
+  padding: 25px 25px;
+  margin-left: -100px;
+  margin-top: 50px;
+  box-shadow: 0 0 16px 0 rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  background-color: hsla(0, 0%, 100%, 0.8);
+  color: #555555;
+}
+
+.bawah1 {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.bawah2 {
+  margin-top: 30px;
+  font-size: 16px;
+}
+
+.fa-hourglass-half,
+.fa-credit-card,
+.fa-file-invoice-dollar {
+  color: #002f59;
+}
+
+.logo-login {
+  color: #848484;
+  font-size: 16px;
+  letter-spacing: 0.2px;
+  line-height: 22px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.kotak-kecil-login {
+  box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.08);
+  border-radius: 5px;
+  background-color: #fff;
+  padding: 10px 10px;
+}
+
+.fb-google {
+  width: 24px;
+  height: 24px;
+}
+
+.learn-more {
+  margin-top: 20px;
+  margin-left: -100px;
+  border-radius: 5px;
+  font-size: 18px;
+  padding: 12px 38px;
+  color: white;
+  border: 1px white solid;
+  background: none;
+}
+
+.learn-more:hover {
+  margin-top: 20px;
+  margin-left: -100px;
+  background-color: #f79a9f;
+  color: #ffffff;
+  border-style: none;
+  border-radius: 5px;
+  font-size: 18px;
+  padding: 12px 38px;
+}
+
+.login {
+  margin-right: -200px;
+  background-color: #ffffff;
+  padding-top: 20px;
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+  border-radius: 18px 18px 0 0;
+  box-shadow: 0 0 16px 0 rgba(0, 0, 0, 0.24);
+  margin-top: -30px;
+  height: 650px;
+  width: 451px;
+}
+
+.login p {
+  margin-top: 30px;
+  color: #3f3e3f;
+  font-size: 16px;
+  letter-spacing: 0.17px;
+  line-height: 22px;
+}
+
+#logo {
+  width: 200px;
+  max-height: 70px;
+}
+
+.tncp {
+  padding-bottom: 10px;
+  font-size: 14px;
+  letter-spacing: 0.2px;
+  line-height: 20px;
+  color: #848484;
+  margin-bottom: 10px !important;
+}
+
+.tncspan {
+  color: #eba1a1;
+}
+
+.navbar {
+  margin-top: -40px;
+}
+
+.join-vendor {
+  min-width: 100%;
+  font-size: 15px;
+  background-color: hsla(0, 0%, 100%, 0.8);
+  border-radius: 0 0 18px 18px;
+  color: #848484;
+}
+
+.join-vendor span {
+  color: #eba1a1;
+  letter-spacing: 0.21px;
+  line-height: 20px;
+  cursor: pointer;
+}
+.modal-content {
+  background-color: transparent !important;
+  box-shadow: none !important;
+  margin-left: 50px !important;
+}
+
+.join-vendor-modal {
+  margin-top: 0px;
+  width: 451px;
+  font-size: 15px;
+  background-color: hsla(0, 0%, 100%, 0.8);
+  border-radius: 0 0 18px 18px;
+  color: #848484;
+}
+
+.join-vendor-modal span {
+  color: #eba1a1;
+  letter-spacing: 0.21px;
+  line-height: 20px;
+  cursor: pointer;
+}
+.initulisansignup {
+  text-align: left !important;
+  margin-right: 0px !important;
+  font-size: 11px;
+  margin-bottom: 10px !important;
+}
+
+.join-vendor-tag {
+  margin-top: 0px !important;
+  padding: 10px;
+}
+
+.join-vendor-signup {
+  margin-top: 95px;
+  font-size: 15px;
+  background-color: hsla(0, 0%, 100%, 0.8);
+  border-radius: 0 0 18px 18px;
+  color: #848484;
+}
+
+.join-vendor-signup span {
+  color: #eba1a1;
+  letter-spacing: 0.21px;
+  line-height: 20px;
+}
+
+.text-center .buton-signup {
+  margin-left: 15px;
+  margin-top: 0px !important;
+  border-radius: 5px;
+  font-size: 18px !important;
+  width: 300px;
+  color: #ffffff !important;
+  background-color: #eba1a1 !important;
+  border-radius: 5px !important;
+  border-style: none;
+  padding: 12px 0;
+  overflow: hidden;
+}
