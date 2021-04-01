@@ -18,33 +18,43 @@ dataRouter.get('/donor', (req, res) => {
 		})
 })
 
-dataRouter.get('/donor', async (req, res) => {
+dataRouter.post('/donor', async (req, res) => {
 	// TODO
 
 	// const uid = 'Tsyw8CACqgQdnGuLkgDJfgDbAhz2'
 	const uid = req.body.uid
 
 	const data = {
-		name: 'Aron',
-		country: 'Eritrea',
-		city: 'Asmara',
-		address: 'blah',
-		email: 'email',
-		verified: false,
-		dob: '23-12-91',
-		organs: []
+		name: {
+			first: 'John',
+			middle: 'Alex',
+			last: 'Doe'
+		},
+		country: 'Uganda',
+		city: 'Kampala',
+		street: 'Gaaba road',
+		zip: '00256',
+		phone: '1234567',
+		email: 'johndoe@mail.com',
+		gender: 'male',
+		motherMaidenName: 'Joana',
+		dob: '01/01/2001',
+		nationalId: 'k12345',
+		selectedOrgans: [],
+		nextOfKinConfirmation: true,
+		verified: false
 	}
 	// console.log(uid)
 
 	adminDb.collection('users').doc(uid).set(data)
 		.then(() => {
-			console.log('success')
+			res.status(201).json({ msg: 'success' })
 		})
-		.catch(() => {
-			console.log('error')
+		.catch((error) => {
+			console.log(error.message)
+			res.status(400).json({ err: error.message })
 		})
 
-	// res.end()
 })
 
 dataRouter.put('/donor', (req, res) => {
