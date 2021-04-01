@@ -16,9 +16,9 @@ function App() {
       </div>
 
       {/* <Route exact path="/" component={Home}></Route> */}
-      <Route path="/Selections" component={Selections}></Route>
-      <Route path="/statistics" component={Statistics}></Route>
-      <Route exact path="/learn" component={Learn}></Route>
+      <Route path="/Selections" component={Selections} />
+      <Route path="/statistics" component={Statistics} />
+      <Route exact path="/learn" component={Learn} />
     </Router>
 
   );
