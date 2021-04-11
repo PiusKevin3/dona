@@ -5,7 +5,8 @@ import { BrowserRouter as Router, Route } from 'react-router-dom';
 //import './App.css';
 import DonorAccount from './components/donorDetails/donorAccount'
 import Statistics from './components/donorDetails/statistics';
-import Learn from './components/donorDetails/Learn';
+import Learn from './components/donorDetails/Learn';  
+import HomeRegistration from './components/donorDetails/homeRegistration';  
 import Selections from './components/donorDetails/selections';
 
 function App() {
@@ -15,7 +16,7 @@ function App() {
         <DonorAccount />
       </div>
 
-      {/* <Route exact path="/" component={Home}></Route> */}
+      <Route exact path="/" component={HomeRegistration}></Route>
       <Route path="/Selections" component={Selections} />
       <Route path="/statistics" component={Statistics} />
       <Route exact path="/learn" component={Learn} />

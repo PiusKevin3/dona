@@ -10,7 +10,9 @@ class NavBarSection extends Component {
         return (
             <div >
                 <Navbar bg="primary" variant="dark">
-                    <Navbar.Brand href="#home">Dona</Navbar.Brand>
+                <LinkContainer to="/">
+                    <Navbar.Brand >Dona</Navbar.Brand>
+                    </LinkContainer>
                     <Nav className="mr-auto">
                         {/* <Nav.Link href="#home">Home</Nav.Link>
                         <Nav.Link href="#statistics">Statistics</Nav.Link>
@@ -36,7 +38,9 @@ class NavBarSection extends Component {
                     </Nav>
 
                     <Nav>
-                        <Nav.Link eventKey={2} href="#LogOut">Log Out</Nav.Link>
+                    <LinkContainer to="/">
+                        <Nav.Link eventKey={2} >Log Out</Nav.Link>
+                        </LinkContainer>
                     </Nav>
 
                 </Navbar>
