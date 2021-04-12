@@ -24,6 +24,8 @@ Run the following command to install the modules
 
 
 Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Open  Client app [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Open  Server app [http://localhost:5000](http://localhost:5000) to view it in the browser.
+
 
 
